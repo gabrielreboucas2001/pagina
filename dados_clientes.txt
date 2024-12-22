@@ -1,12 +1,1 @@
-Nome: PIERRE NARCISO DE OLIVEIRA NARCISO DE OLIVEIRA
-E-mail: sabwaymoney45@gmail.com
-Telefone: (19) 9810-76500
-CPF: 999.999.999-99
-CEP: 13323441
-Endereço: Rua Antonio de Salema, Jardim Arco-Ãris, Salto - SP
-Número: 8888888
-Complemento: 
-Cartão: 2222 2222 2222 2222
-Validade: 99/99
-CVV: 111
----------------------------
+
