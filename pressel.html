@@ -4,143 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🔞😈 Videos e Fotos</title>
-    <link rel="stylesheet" href="style.css">
-	<style>
-	* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
+            line-height: 1.6;
+        }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2a2a40;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
 
-.header {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-.perfil-imagem {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
+        .perfil-imagem {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff4b5c;
+            margin-bottom: 15px;
+        }
 
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
+        h1 {
+            font-size: 2.5rem;
+            color: #ff4b5c;
+            margin-bottom: 10px;
+        }
 
-.descricao {
-    font-size: 1.2rem;
-    color: #777;
-}
+        .descricao {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
 
-.biografia {
-    margin-bottom: 30px;
-}
+        .biografia {
+            margin-bottom: 30px;
+        }
 
-.biografia h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-}
+        .biografia h2 {
+            font-size: 1.8rem;
+            color: #ff4b5c;
+            margin-bottom: 15px;
+        }
 
-.biografia p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
+        .biografia p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ddd;
+        }
 
-.redes-sociais {
-    margin-bottom: 30px;
-}
+        .assinatura {
+            margin-bottom: 30px;
+            text-align: center;
+            background-color: #33334d;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
 
-.redes-sociais h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-}
+        .assinatura h2 {
+            font-size: 1.8rem;
+            color: #ff4b5c;
+            margin-bottom: 10px;
+        }
 
-.redes-sociais ul {
-    list-style: none;
-    padding: 0;
-}
+        .assinatura p {
+            font-size: 1.2rem;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
 
-.redes-sociais li {
-    margin-bottom: 10px;
-}
+        .btn-assinar {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff4b5c;
+            color: #fff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
 
-.redes-sociais a {
-    text-decoration: none;
-    color: #0077b5;
-    font-size: 1.2rem;
-}
+        .btn-assinar:hover {
+            background-color: #ff2a3a;
+            transform: scale(1.05);
+        }
 
-.redes-sociais a:hover {
-    color: #005a8e;
-}
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            color: #bbb;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+        }
 
-.assinatura {
-    margin-top: 40px;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
 
-.assinatura h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-}
+            .descricao {
+                font-size: 1rem;
+            }
 
-.assinatura p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 20px;
-}
+            .biografia h2, .assinatura h2 {
+                font-size: 1.5rem;
+            }
 
-.btn-assinar {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #ff4b5c;
-    color: #fff;
-    font-size: 1.4rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+            .biografia p, .assinatura p {
+                font-size: 1rem;
+            }
 
-.btn-assinar:hover {
-    background-color: #ff2a3a;
-}
+            .btn-assinar {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+        }
 
-.footer {
-    text-align: center;
-    padding: 10px;
-    font-size: 1rem;
-    color: #777;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-}
+        @media (max-width: 480px) {
+            .perfil-imagem {
+                width: 120px;
+                height: 120px;
+            }
 
-	</style>
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .descricao {
+                font-size: 0.9rem;
+            }
+
+            .biografia h2, .assinatura h2 {
+                font-size: 1.3rem;
+            }
+
+            .biografia p, .assinatura p {
+                font-size: 0.9rem;
+            }
+
+            .btn-assinar {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -149,25 +176,17 @@ h1 {
             <h1>ISABELLA CAROLINA</h1>
             <p class="descricao">Safadinha e Gostosa</p>
         </header>
-		
-		<section class="assinatura">
+
+        <section class="assinatura">
             <h2>Assine para acessar conteúdos exclusivos</h2>
             <p>Assine por apenas <strong>R$9,90</strong> e tenha acesso a fotos e vídeos exclusivos.</p>
             <a href="https://bit.ly/49SCRYJ" class="btn-assinar">Assinar Agora</a>
         </section>
-		<br>
 
         <section class="biografia">
             <h2>Sobre Mim</h2>
-            <p>Olá, Me chamo Isabella. Adoro que me pega de quatro e coloca o dedinho no meu cuzinho, tenho mais de 30 vídeos e fotos que fiz pra você!
-
-Sou safadinha sem frescura. Venha me ver deixa eu fazer você gozar!!!
-</p>
+            <p>Olá, Me chamo Isabella. Adoro que me pega de quatro e coloca o dedinho no meu cuzinho, tenho mais de 30 vídeos e fotos que fiz pra você! Sou safadinha sem frescura. Venha me ver deixa eu fazer você gozar!!!</p>
         </section>
-
-        
-
-        
 
         <footer class="footer">
             <p>&copy; 2024 Criadora de Conteúdos</p>
